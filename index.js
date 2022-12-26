@@ -17,7 +17,6 @@ app.on('ready', () => {
   mainWindow.on('blur', () => {
     mainWindow.hide();
   });
-  console.log("1")
 
   const iconName =
     process.platform === 'win32' ? 'windows-icon.png' : 'iconTemplate.png';
