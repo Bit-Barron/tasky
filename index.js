@@ -17,10 +17,8 @@ app.on('ready', () => {
   mainWindow.on('blur', () => {
     mainWindow.hide();
   });
-  console.log("s")
 
-  const iconName =
-    process.platform === 'win32' ? 'windows-icon.png' : 'iconTemplate.png';
+  const iconName = process.platform === 'win32' ? 'windows-icon.png' : 'iconTemplate.png';
   const iconPath = path.join(__dirname, `./src/assets/${iconName}`);
 
   tray = new Tray(iconPath);
